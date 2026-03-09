@@ -16,7 +16,7 @@ function Login() {
         e.preventDefault();
         try{
 
-            await axios.post("https://refrain-addiction-amitbatra31.vercel.app/",{
+            await axios.post("http://localhost:8001/",{
                 email,password
             })
             .then(res=>{

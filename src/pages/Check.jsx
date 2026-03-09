@@ -6,7 +6,7 @@ const UserAppointments = ({ userId }) => {
   const [appointments, setAppointments] = useState([]);
   const email = useSharedStore((state) => state.sharedData);
   useEffect(() => {
-    fetch(`https://refrain-addiction-amitbatra31.vercel.app/api/appointments/user/${email}`)
+    fetch(`http://localhost:8001/api/appointments/user/${email}`)
       .then((response) => response.json())
       .then((data) => setAppointments(data.appointments))
       .catch((error) => console.error('Error fetching appointments:', error));

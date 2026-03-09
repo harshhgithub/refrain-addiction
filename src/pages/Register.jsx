@@ -17,7 +17,7 @@ function Register() {
         e.preventDefault();
 
         try{
-            await axios.post("https://refrain-addiction-amitbatra31.vercel.app/register",{
+            await axios.post("http://localhost:8001/register",{
                 name,email,city,college, password
             })
             .then(res=>{

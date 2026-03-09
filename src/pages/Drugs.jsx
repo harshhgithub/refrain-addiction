@@ -63,7 +63,7 @@ const Drugs = () => {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-      await axios.post('https://refrain-addiction-amitbatra31.vercel.app/answers', {
+      await axios.post('http://localhost:8001/answers', {
         quizInfo: Object.fromEntries(quizInfo),
       })
       .then(res=>{

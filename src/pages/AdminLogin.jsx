@@ -13,7 +13,7 @@ function AdminLogin() {
 
     try {
       await axios
-        .post('https://refrain-addiction-amitbatra31.vercel.app/admin', {
+        .post('http://localhost:8001/admin', {
           email,
           password,
         })

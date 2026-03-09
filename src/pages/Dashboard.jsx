@@ -15,7 +15,7 @@ function Dashboard() {
     const fetchAppointmentRequests = async () => {
       try {
         const response = await axios.get(
-          'https://refrain-addiction-amitbatra31.vercel.app/api/appointments/requests',
+          'http://localhost:8001/api/appointments/requests',
         );
         setAppointmentRequests(response.data);
       } catch (error) {
@@ -29,7 +29,7 @@ function Dashboard() {
     const handleCheckApproval = async () => {
       try {
         const response = await axios.post(
-          'https://refrain-addiction-amitbatra31.vercel.app/api/counselors/approval',
+          'http://localhost:8001/api/counselors/approval',
           {
             email,
           },
@@ -47,7 +47,7 @@ function Dashboard() {
   const handleGenerateMeetingCode = async (mail) => {
     try {
       const response = await axios.patch(
-        `https://refrain-addiction-amitbatra31.vercel.app/api/appointments/meeting`,
+        `http://localhost:8001/api/appointments/meeting`,
         {
           mail,
         },

@@ -13,7 +13,7 @@ function Assessment() {
     e.preventDefault();
     const data = "/"+addiction;
     try {
-      await axios.post("https://refrain-addiction-amitbatra31.vercel.app/drugtype",{
+      await axios.post("http://localhost:8001/drugtype",{
           email,addiction
       })
       .then(res=>{
