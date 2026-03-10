@@ -1,764 +1,245 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './App.css';
-import { sbIcon,client1,client2,client3,confi } from '../assets';
+import React from "react";
+import { Link } from "react-router-dom";
+import { sbIcon, client1, client2, client3, confi } from "../assets";
 
 function Landing() {
   return (
-    <>
-      <div>
-        {/* mian-content */}
-        <div className="main-w3layouts-header-sec">
-          {/* header */}
-          <header>
-            <div className="container">
-              <div className="header d-lg-flex justify-content-between align-items-center">
-                <div className="header-section">
-                  <h1>
-                    <a
-                      className="navbar-brand logo editContent"
-                      href="index.html"
-                    >
-                      <div className="flex">
-                        <img src={sbIcon} width={45} alt="" />
-                        <a href="https://breadsbangalore.org/" className=" mt-2 mx-2 text-4xl font-bold">
-                          Refrain Addiction
-                        </a>
-                      </div>
-                    </a>
-                  </h1>
-                </div>
-                <div className="nav_section">
-                  <nav>
-                    <label htmlFor="drop" className="toggle mt-lg-0 mt-1">
-                      <span className="fa fa-bars" aria-hidden="true" />
-                    </label>
-                    <input type="checkbox" id="drop" />
-                    <ul className="menu mt-3">
-                  
-                      <li>
-                        <Link to="/loginc">
-                          <button className="menu">
-                            LOGIN AS COUNCELOR
-                          </button>{' '}
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/adminlogin">
-                          <button className="menu">
-                            LOGIN AS ADMIN
-                          </button>{' '}
-                        </Link>
-                      </li>
-                      <li>
-                        {/* First Tier Drop Down */}
-                        <label htmlFor="drop-2" className="toggle">
-                          Dropdown{' '}
-                          <span
-                            className="fa fa-angle-down"
-                            aria-hidden="true"
-                          />{' '}
-                        </label>
-                        <a href="#">
-                          Dropdown{' '}
-                          <span
-                            className="fa fa-angle-down"
-                            aria-hidden="true"
-                          />
-                        </a>
-                        <input type="checkbox" id="drop-2" />
-                        <ul className="inner-dropdown">
-                          <li>
-                            <a href="#stats">Stats</a>
-                          </li>
-                          <li>
-                            <a href="#lab">Laboratory</a>
-                          </li>
-                          <li>
-                            <a href="#test">Reviews</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <a href="https://breadsbangalore.org/">Contact Us</a>
-                      </li>
-                      <li className="icons">
-                        <a href="https://breadsbangalore.org/" className="face-bk">
-                          <span className="fa fa-facebook" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li className="icons">
-                        <a href="https://breadsbangalore.org/" className="twitter">
-                          <span className="fa fa-twitter" aria-hidden="true" />
-                        </a>
-                      </li>
-                      <li className="icons">
-                        <a href="https://breadsbangalore.org/" className="dribble">
-                          <span className="fa fa-dribbble" />
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </header>
-          {/* //header */}
-          {/* banner */}
-          <section className="banner_w3pvt" id="home">
-            <div className="csslider infinity" id="slider1">
-              <input
-                type="radio"
-                name="slides"
-                defaultChecked="checked"
-                id="slides_1"
-              />
-              <input type="radio" name="slides" id="slides_2" />
-              <input type="radio" name="slides" id="slides_3" />
-              <input type="radio" name="slides" id="slides_4" />
-              <ul>
-                <li>
-                  <div className="banner-top">
-                    <div className="overlay">
-                      <div className="container">
-                        <div className="banner-info">
-                          <div className="banner-w3layouts-inner">
-                            <h3>
-                              We care and protect <span>your </span> health.
-                            </h3>
-                            <h4>We will help to find health, to everyone.</h4>
-                            <Link className="read btn mt-3" to="/login">
-                              Start a New Life
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="banner-top1">
-                    <div className="overlay">
-                      <div className="container">
-                        <div className="banner-info">
-                          <div className="banner-w3layouts-inner">
-                            <h3>
-                              We do our best for you and <span>your </span>{' '}
-                              health.
-                            </h3>
-                            <h4>We will help to find health, to everyone.</h4>
-                            <Link className="read btn mt-3" to="/login">
-                              Start a New Life
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="banner-top2">
-                    <div className="overlay">
-                      <div className="container">
-                        <div className="banner-info">
-                          <div className="banner-w3layouts-inner">
-                            <h3>
-                              We care and protect <span>your </span> health.
-                            </h3>
-                            <h4>We will help to find health, to everyone.</h4>
-                            <Link className="read btn mt-3" to="/login">
-                              Start a New Life
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div className="banner-top3">
-                    <div className="overlay">
-                      <div className="container">
-                        <div className="banner-info">
-                          <div className="banner-w3layouts-inner">
-                            <h3>
-                              We do our best for you and <span>your </span>{' '}
-                              health.
-                            </h3>
-                            <h4>We will help to find health, to everyone.</h4>
-                            <Link className="read btn mt-3" to="/login">
-                              Start a New Life
-                            </Link>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-              <div className="arrows">
-                <label htmlFor="slides_1" />
-                <label htmlFor="slides_2" />
-                <label htmlFor="slides_3" />
-                <label htmlFor="slides_4" />
-              </div>
-            </div>
-          </section>
-          {/* //banner */}
-        </div>
-        {/* //header */}
-        {/*/banner-bottom */}
-        <section className="banner-bottom py-5">
-          <div className="container-fluid inner-sec-w3ls">
-            <div className="feature-grids row text-center">
-              <div className="col-lg-3 gd-bottom one">
-                <div className="bottom-gd">
-                  <span className="fa fa-life-ring" aria-hidden="true" />
-                  <h3 className="mb-2">Medication-Assisted Treatment (MAT):</h3>
-                  <p>
-                    {' '}
-                    MAT involves the use of medications, such as methadone,
-                    buprenorphine, or naltrexone, in combination with counseling
-                    and behavioral therapies. These medications help manage
-                    withdrawal symptoms, reduce cravings, and normalize brain
-                    chemistry, making it easier for individuals to recover from
-                    addiction .
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-3 gd-bottom">
-                <div className="bottom-gd">
-                  <span className="fa fa-dribbble" aria-hidden="true" />
-                  <h3 className="mb-2">Cognitive-Behavioral Therapy (CBT): </h3>
-                  <p>
-                    CBT is a widely used therapy for drug addiction. It focuses
-                    on identifying and changing negative thought patterns and
-                    behaviors associated with drug use. CBT helps individuals
-                    develop coping skills, manage triggers, and build a strong
-                    support system..
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-3 gd-bottom">
-                <div className="bottom-gd">
-                  <span className="fa fa-mobile" aria-hidden="true" />
-                  <h3 className="mb-2">Motivational Interviewing (MI):</h3>
-                  <p>
-                    {' '}
-                    MI is a counseling technique that helps individuals find
-                    motivation to change their addictive behaviors. It involves
-                    open-ended questions, active listening, and empathy to
-                    enhance an individual's motivation and commitment to
-                    recovery.
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-3 gd-bottom">
-                <div className="bottom-gd">
-                  <span className="fa fa-folder-open-o" aria-hidden="true" />
-                  <h3 className="mb-2">Online Appointment Booking System: </h3>
-                  <p>
-                    Many treatment centers now offer online appointment booking
-                    systems, allowing individuals to conveniently schedule a
-                    visit for drug addiction treatment.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* //banner-bottom */}
-        {/* /last-content */}
-        <section className="last-content">
-          <div className="overlay-last">
-            <div className="container text-center">
-              <div className="last-w3pvt-inner-content row">
-                <div className="col-md-6 offset-md-6">
-                  <form action="#" className="booking" method="post">
-                    <h3 className="mb-4">Book Appointment</h3>
-                    <div className="form-group">
-                      <input
-                        placeholder="Your Name"
-                        name="name"
-                        type="text"
-                        required
-                      />
-                      <input
-                        placeholder="Contact Number"
-                        name="number"
-                        type="text"
-                        required
-                      />
-                      <input placeholder="Address" type="text" required />
-                      <input placeholder="Timing" type="text" required />
-                      <span disabled className="book-appo btn mt-3">
-                        Quick Appointment{' '}
-                      </span>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* //last-content */}
-        <section className="banner-bottom py-8">
-          <div className="container py-md-5">
-            <div className="row banner-grids mb-lg-5">
-              <div className="col-lg-4 content-left">
-                <img src="images/vk.jpeg" alt="" className="img-fluid" />
-              </div>
-              <div className="col-lg-4 content-left">
-                <img src="images/vk1.jpeg" alt="" className="img-fluid" />
-              </div>
-              <div className="col-lg-4 content-right">
-                <h5 className="mt-1 text-xl">Trust Us</h5>
-                <h4>We will help to find health, to everyone.</h4>
-                <p className="mt-2 text-left">
-                  Overcoming drug addiction can significantly improve your
-                  physical and mental health. It allows you to regain control
-                  over your life, reduce the risk of health complications, and
-                  increase your overall well-being.
-                </p>
-                <ul className="tic-info list-unstyled">
-                  <li>
-                    <span className="fa fa-hand-o-right" /> Rebuilding
-                    Relationships
-                  </li>
-                  <li>
-                    <span className="fa fa-hand-o-right" /> Personal Growth and
-                    Self-Esteem
-                  </li>
-                  <li>
-                    <span className="fa fa-hand-o-right" /> Role Model for
-                    Others
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="row mt-lg-5 mt-4 pt-5 text-center" id="stats">
-              <div className="col-lg-4 counter editContent mt-3">
-                <span className="fa fa-users" />
-                <div className="counter-info">
-                  <h4>7200+</h4>
-                  <p>Healthy and happy customers treated by BREADS</p>
-                </div>
-              </div>
-              <div className="col-lg-4 counter two editContent mt-3">
-                <span className="fa fa-user-md" />
-                <div className="counter-info">
-                  <h4>150+</h4>
-                  <p>
-                    Professional medical specialist for counseling at BREADS
-                  </p>
-                </div>
-              </div>
-              <div className="col-lg-4 counter editContent mt-3">
-                <span className="fa fa-diamond" />
-                <div className="counter-info">
-                  <h4>15+</h4>
-                  <p>
-                    Years of impeccable and successful work by our organization
-                    BREADS
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* /tabs */}
-        <section className="tabs-blue py-5">
-          <div className="container pt-md-5">
-            <div className="header-w3layouts text-center mb-5">
-              <h3 className="title-w3pvt mb-3">Our Services</h3>
-            </div>
-            <div className="tab-main mx-auto">
-              <input
-                id="tab1"
-                type="radio"
-                name="tabs"
-                className="w3layouts-sm"
-                defaultChecked
-              />
-              <label htmlFor="tab1">Drug </label>
-              <input
-                id="tab2"
-                type="radio"
-                className="w3layouts-sm"
-                name="tabs"
-              />
-              <label htmlFor="tab2">Gadget </label>
-              <input
-                id="tab3"
-                type="radio"
-                className="w3layouts-sm"
-                name="tabs"
-              />
-              <label htmlFor="tab3">Porn </label>
+    <div className="bg-gray-50 min-h-screen">
 
-              <section id="content1" className="inner-w3layouts-wrap ">
-                <div className="row part-grids text-center inner-sec-w3ls d-flex justify-content-center">
-                  <div className="col-md-6 partgrid2 ">
-                    <div className="thumbnail cardd">
-                      <div className="img-event">
-                        <img
-                          className="img-fluid"
-                          src="images/g1.jpeg"
-                          alt=""
-                          style={{ margin: 'auto' }}
-                        />
-                      </div>
-                      <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Natural Drugs</h4>
-                        <p>
-                          Natural drugs are derived from substances found in
-                          nature, such as plants. These drugs have been used for
-                          centuries for various purposes, including medicinal,
-                          recreational, or spiritual use. Examples of natural
-                          drugs include marijuana, opium, psilocybin mushrooms,
-                          and cocaine derived from the coca plant.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 partgrid1">
-                    <div className="thumbnail cardd">
-                      <div className="img-event">
-                        <img
-                          className="img-fluid"
-                          src="images/g2.jpeg"
-                          alt=""
-                          style={{ margin: 'auto' }}
-                        />
-                      </div>
-                      <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Synthetic Drug</h4>
-                        <p>
-                          Synthetic drugs are artificially created in
-                          laboratories and are designed to mimic the effects of
-                          natural substances or create entirely new effects.
-                          These drugs are often produced through chemical
-                          processes using various compounds. Synthetic drugs
-                          include substances like MDMA (ecstasy),
-                          methamphetamine, synthetic cannabinoids, and synthetic
-                          opioids.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section id="content2" className="inner-w3layouts-wrap">
-                <div className="row part-grids text-center">
-                  <div className="col-md-6 partgrid2 d-flex justify-content-center">
-                    <div className="thumbnail cardd">
-                      <div className="img-event">
-                        <img
-                          className="img-fluid"
-                          src="images/g3.jpeg"
-                          alt=""
-                          style={{ margin: 'auto' }}
-                        />
-                      </div>
-                      <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Social Media</h4>
-                        <p>
-                          Social media addiction is a pervasive issue
-                          characterized by excessive use and dependency on
-                          social media platforms, often resulting in decreased
-                          productivity, isolation, and negative impacts on
-                          mental health.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-6 partgrid1 d-flex justify-content-center">
-                    <div className="thumbnail cardd">
-                      <div className="img-event">
-                        <img
-                          className="img-fluid"
-                          src="images/g10.jpeg"
-                          alt=""
-                          style={{ margin: 'auto' }}
-                        />
-                      </div>
-                      <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">
-                          Technology Dependency
-                        </h4>
-                        <p>
-                          Technology Dependency refers to the excessive reliance
-                          and attachment to electronic devices beyond social
-                          media platforms, such as smartphones, laptops,
-                          tablets, and gaming consoles. It involves compulsive
-                          use and difficulty in controlling the time spent on
-                          these devices.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-              <section id="content3" className="inner-w3layouts-wrap">
-                <div className="row part-grids text-center">
-                  <div className="col-md-12 partgrid d-flex justify-content-center">
-                    <div className="thumbnail cardd">
-                      <div className="img-event">
-                        <img
-                          className="img-fluid"
-                          src="images/p.jpeg"
-                          alt=""
-                          style={{ margin: 'auto' }}
-                        />
-                      </div>
-                      <div className="caption cardd-body p-md-4">
-                        <h4 className="mb-4 editContent">Porn</h4>
-                        <p>
-                          Porn addiction is a complex issue that affects
-                          individuals globally. It involves compulsive and
-                          excessive consumption of pornography, leading to
-                          negative consequences. It can impair relationships,
-                          mental health, and overall well-being. Seeking
-                          professional help, support from loved ones, and
-                          developing healthy coping mechanisms are essential for
-                          overcoming porn addiction.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-          </div>
-        </section>
-        {/* //tabs */}
-        {/* //last-content */}
-        <section className="lab-test py-5" id="lab">
-          <div className="container py-md-5">
-            <div className="row banner-grids mb-lg-5">
-              <div className="col-lg-6 content-right pt-md-4">
-                <h5 className="mt-1 font-bold text-2xl">Privacy and Confidentiality</h5>
-                <p className="mt-2 text-left">
-                  We prioritize the privacy and confidentiality of our visitors.
-                  Any personal information collected on our website is handled
-                  securely and in compliance with relevant data protection laws.
-                  Our privacy policy statement ensures transparency in how we
-                  handle data.{' '}
-                </p>
-                <ul className="tic-info list-unstyled">
-                  <li>
-                    <span className="fa fa-hand-o-right" /> strict
-                    confidentiality policy in place to protect your privacy
-                  </li>
-                  <li>
-                    <span className="fa fa-hand-o-right" /> We respect your
-                    right to remain anonymous or use a pseudonym when
-                    interacting with our website
-                  </li>
-                  <li>
-                    <span className="fa fa-hand-o-right" /> We are transparent
-                    about our privacy practices
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-6 content-left">
-                <img src={confi} alt="" className="img-fluid" />
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* //lab-test */}
-        {/* /grids-content1 */}
-        <section className="testimonials py-5" id="test">
-          <div className="container py-lg-3">
-            <div className="header-w3layouts text-center mb-5">
-              <h3 className="title-w3pvt two mb-3"> Client Reviews </h3>
-            </div>
-            <div className="test-content">
-              <div className="testimonials_grid">
-                <div className='flex justify-center mb-4'>
-                  <span className="fa fa-quote-left mr-2" aria-hidden="true" />
-                <p className="sub-test editContent">Great website! I would recommend it to all my friends who are seeking for help :P</p>
-                <span className="fa fa-quote-right ml-2" aria-hidden="true" />
-                </div>
+    {/* NAVBAR */}
+<header className="bg-white border-b shadow-sm">
+  <div className="max-w-6xl mx-auto flex items-center justify-between px-6 py-3">
 
-                <div className='flex'>
-                  <div className="testi_grid mr-4">
-                  <img src={client1} alt=" " className="img-fluid h-40 w-40 mx-2" />
-                  <h5>Thomas Carl</h5>
-                  <label>I used this website to overcome my addiction of consuming alcohol. </label>
-                </div>
-                <div className="testi_grid mr-4 ">
-                  <img src={client2} alt=" " className="img-fluid h-40 w-40 ml-3" />
-                  <h5>Lana Del Ray</h5>
-                  <label>This website boosted my confidence and motivated me to overcome my addiction.</label>
-                </div><div className="testi_grid gap-8">
-                  <img src={client3} alt=" " className="img-fluid h-40 w-40" />
-                  <h5>Ana De armas</h5>
-                  <label>I used this website to overcome my addiction of consuming alcohol. </label>
-                </div>
-                </div>
-              </div>
-            </div>
+    {/* Logo + Title */}
+    <div className="flex items-center gap-2">
+      <img src={sbIcon} className="w-9 h-9" alt="logo" />
+      <span className="text-2xl font-semibold text-gray-800 tracking-tight">
+        Refrain Addiction
+      </span>
+    </div>
+
+    {/* Buttons */}
+    <div className="flex items-center gap-4">
+
+      <Link to="/loginc">
+        <button className="px-5 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition font-medium">
+          Counselor Login
+        </button>
+      </Link>
+
+      <Link to="/adminlogin">
+        <button className="px-5 py-2 bg-gray-900 text-white rounded-md hover:bg-black transition font-medium">
+          Admin Login
+        </button>
+      </Link>
+
+    </div>
+
+  </div>
+</header>
+
+
+      {/* HERO */}
+      <section className="bg-gradient-to-r from-blue-100 to-blue-50 py-24">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+          <div>
+            <h1 className="text-5xl font-bold text-gray-800 leading-tight">
+              Break Free From
+              <span className="text-blue-600"> Addiction</span>
+            </h1>
+
+            <p className="mt-6 text-lg text-gray-600">
+              Speak with professional counselors, attend therapy sessions,
+              and take the first step toward rebuilding your life.
+            </p>
+
+            <Link to="/login">
+              <button className="mt-8 px-8 py-4 bg-blue-600 text-white rounded-xl text-lg hover:bg-blue-700 transition">
+                Start a New Life
+              </button>
+            </Link>
           </div>
-        </section>
-        {/* //grids-content1 */}
-        {/* footer */}
-        <footer>
-          <div className="container">
-            <div className="row footer-top">
-              <div className="col-lg-4 footer-grid_section_w3layouts">
-                <h2 className="logo-2 mb-lg-4 mb-3">
-                  <div className="flex">
-                    <img src={sbIcon} width={35} alt="" />
-                    <a href="/" className="mx-2 mt-2">
-                      Refrain Addiction
-                    </a>
-                  </div>
-                </h2>
-                <p>A BREADS' PROGRAM</p>
-                <h4 className="sub-con-fo ad-info my-4">Catch on Social</h4>
-                <ul className="w3layouts_social_list list-unstyled">
-                  <li>
-                    <a href="#" className="w3pvt_facebook">
-                      <span className="fa fa-facebook-f" />
-                    </a>
-                  </li>
-                  <li className="mx-2">
-                    <a href="#" className="w3pvt_twitter">
-                      <span className="fa fa-twitter" />
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" className="w3pvt_dribble">
-                      <span className="fa fa-dribbble" />
-                    </a>
-                  </li>
-                  <li className="ml-2">
-                    <a href="#" className="w3pvt_google">
-                      <span className="fa fa-google-plus" />
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-lg-8 footer-right">
-                <div className="w3layouts-news-letter">
-                  <h3 className="footer-title mb-lg-4 mb-3">Newsletter</h3>
-                  <p>
-                    By subscribing to our mailing list you will always get
-                    latest news and updates from us.
-                  </p>
-                  <form
-                    action="#"
-                    method="post"
-                    className="w3layouts-newsletter"
-                  >
-                    <input
-                      type="email"
-                      name="Email"
-                      className="h-12"
-                      placeholder="Enter your email..."
-                      required
-                    />
-                    <button className="btn1 h-12">
-                      <span
-                        className="fa fa-paper-plane-o"
-                        aria-hidden="true"
-                      />
-                    </button>
-                  </form>
-                </div>
-                <div className="row mt-lg-4 bottom-w3layouts-sec-nav mx-0">
-                  <div className="col-md-4 footer-grid_section_w3layouts">
-                    <h3 className="footer-title mb-lg-4 mb-3">Information</h3>
-                    <ul className="list-unstyled w3layouts-icons">
-                      <li>
-                        <a href="index.html">Home</a>
-                      </li>
-                      <li className="mt-3">
-                        <a href="about.html">About Us</a>
-                      </li>
-                      <li className="mt-3">
-                        <a>Departments</a>
-                      </li>
-                      <li className="mt-3">
-                        <a href="services.html">Services</a>
-                      </li>
-                      <li className="mt-3">
-                        <Link to="https://breadsbangalore.org/">Contact Us</Link>
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="col-md-4 footer-grid_section_w3layouts">
-                    {/* social icons */}
-                    <div className="agileinfo_social_icons">
-                      <h3 className="footer-title mb-lg-4 mb-3">
-                        Customer Service
-                      </h3>
-                      <ul className="list-unstyled w3layouts-icons">
-                        <li>
-                          <a href="about.html">About Us</a>
-                        </li>
-                        <li className="mt-3">
-                          <a href="#">Delivery &amp; Returns</a>
-                        </li>
-                        <li className="mt-3">
-                          <a href="#">Waranty</a>
-                        </li>
-                        <li className="mt-3">
-                          <a href="#">Terms &amp; Condition</a>
-                        </li>
-                        <li className="mt-3">
-                          <a href="#">Privacy Plolicy</a>
-                        </li>
-                      </ul>
-                    </div>
-                    {/* social icons */}
-                  </div>
-                  <div className="col-md-4 footer-grid_section_w3layouts my-md-0 my-5">
-                    <h3 className="footer-title mb-lg-4 mb-3">Contact Info</h3>
-                    <div className="contact-info">
-                      <div className="footer-address-inf">
-                        <h4 className="ad-info mb-2">Phone</h4>
-                        <p>+91 00010209247</p>
-                      </div>
-                      <div className="footer-address-inf my-4">
-                        <h4 className="ad-info mb-2">Email </h4>
-                        <p>
-                          <a href="mailto:info@example.com">info@example.com</a>
-                        </p>
-                      </div>
-                      <div className="footer-address-inf">
-                        <h4 className="ad-info mb-2">Location</h4>
-                        <p>Honey Avenue, Delhi, 100201</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
-        {/* //footer */}
-        <div className="cpy-right py-3">
-          <div className="container">
-            <div className="row">
-              <p className="col-md-10 text-left">
-                © 2023 Refrain Addiction. All rights reserved{' '}
-              </p>
-              {/* move top icon */}
-              <a
-                href="#home"
-                className="move-top text-lg-right text-center col-md-2"
-              >
-                <span className="fa fa-angle-double-up" aria-hidden="true" />
-              </a>
-              {/* //move top icon */}
-            </div>
-          </div>
+
+          <img
+            src="https://images.unsplash.com/photo-1506126613408-eca07ce68773"
+            className="rounded-xl shadow-lg"
+            alt=""
+          />
+
         </div>
-      </div>
-    </>
+      </section>
+
+
+      {/* FEATURES */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto px-6">
+
+          <h2 className="text-3xl font-semibold text-center mb-12">
+            Recovery Support
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+            <FeatureCard
+              title="Medication Assisted Treatment"
+              text="Medications combined with therapy help reduce cravings and withdrawal symptoms."
+            />
+
+            <FeatureCard
+              title="Cognitive Behavioral Therapy"
+              text="CBT helps identify negative thoughts and build healthy coping strategies."
+            />
+
+            <FeatureCard
+              title="Motivational Interviewing"
+              text="Helps individuals discover their motivation to change addictive behaviors."
+            />
+
+            <FeatureCard
+              title="Online Appointments"
+              text="Book therapy sessions and consultations directly through the platform."
+            />
+
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* BOOK APPOINTMENT */}
+      <section className="bg-blue-50 py-20">
+        <div className="max-w-xl mx-auto bg-white p-10 rounded-xl shadow-lg">
+
+          <h2 className="text-2xl font-semibold text-center mb-6">
+            Book Appointment
+          </h2>
+
+          <form className="space-y-4">
+
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="w-full p-3 border rounded-lg"
+            />
+
+            <input
+              type="text"
+              placeholder="Contact Number"
+              className="w-full p-3 border rounded-lg"
+            />
+
+            <input
+              type="text"
+              placeholder="Address"
+              className="w-full p-3 border rounded-lg"
+            />
+
+            <input
+              type="text"
+              placeholder="Preferred Timing"
+              className="w-full p-3 border rounded-lg"
+            />
+
+            <button className="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700">
+              Quick Appointment
+            </button>
+
+          </form>
+
+        </div>
+      </section>
+
+
+      {/* TRUST */}
+      <section className="py-20">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center px-6">
+
+          <img src={confi} className="rounded-xl shadow-md" alt="" />
+
+          <div>
+            <h2 className="text-3xl font-semibold mb-4">
+              Privacy & Confidentiality
+            </h2>
+
+            <p className="text-gray-600 mb-6">
+              Your conversations and data remain completely confidential.
+              You may even remain anonymous when seeking help.
+            </p>
+
+            <ul className="space-y-2 text-gray-700">
+              <li>✔ Strict confidentiality policy</li>
+              <li>✔ Anonymous support options</li>
+              <li>✔ Secure platform</li>
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      {/* TESTIMONIALS */}
+      <section className="bg-gray-100 py-20">
+
+        <h2 className="text-3xl font-semibold text-center mb-12">
+          Client Reviews
+        </h2>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 px-6">
+
+          <ReviewCard
+            img={client1}
+            name="Thomas Carl"
+            text="This platform helped me overcome alcohol addiction."
+          />
+
+          <ReviewCard
+            img={client2}
+            name="Lana Del Ray"
+            text="Counselors helped rebuild my confidence."
+          />
+
+          <ReviewCard
+            img={client3}
+            name="Ana De Armas"
+            text="Highly recommended for anyone seeking recovery."
+          />
+
+        </div>
+
+      </section>
+
+
+      {/* FOOTER */}
+      <footer className="bg-gray-900 text-white py-8 text-center">
+        <p>© 2026 Refrain Addiction. All rights reserved.</p>
+      </footer>
+
+    </div>
+  );
+}
+
+
+/* FEATURE CARD COMPONENT */
+function FeatureCard({ title, text }) {
+  return (
+    <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+      <h3 className="font-semibold text-lg mb-2">{title}</h3>
+      <p className="text-gray-600 text-sm">{text}</p>
+    </div>
+  );
+}
+
+
+/* REVIEW CARD COMPONENT */
+function ReviewCard({ img, name, text }) {
+  return (
+    <div className="bg-white p-6 rounded-xl shadow-md text-center">
+      <img src={img} className="mx-auto h-24 mb-4" alt="" />
+      <h4 className="font-semibold">{name}</h4>
+      <p className="text-gray-600 text-sm mt-2">{text}</p>
+    </div>
   );
 }
 
